@@ -1,17 +1,24 @@
 import './App.css';
-import LikeImage from './components/LikeImage';
-import LikePost from './components/LikePost';
+import Props from './components/Props';
+import Image from './components/image';
+import Post from './components/post';
 
 function App() {
   return (
     <div>
       <h3>Some Blog</h3>
       <div className='buttons'>
-        <LikePost/>
-        <LikeImage/>
+        {/*--------------Using props here-----------  */}
+        {/* <Props message={"LikePost"}/>
+        <Props message={"LikeImage"}/> */}
+        {/*------------- Using hoc here-------------- */}
+        <Image/>
+        <Post/>
+        
       </div>
     </div>
   );
+  
 }
 
 export default App;
